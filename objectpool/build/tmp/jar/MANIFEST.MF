@@ -1,2 +1,4 @@
 Manifest-Version: 1.0
+Implementation-Title: ObjectPool jar
+Implementation-Version: 1.0.00
 

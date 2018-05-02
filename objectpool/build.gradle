@@ -1,30 +1,39 @@
 group 'com.saharw'
 version '1.0.00'
 
-buildscript {
-    ext.kotlin_version = '1.2.31'
-
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
+apply plugin: 'idea'
 apply plugin: 'kotlin'
+apply plugin: 'java'
+
+def jarBaseName = "ObjectPoolSDK"
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/kotlin']
+        }
+    }
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
 }
 
-compileKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+repositories {
+    jcenter()
 }
-compileTestKotlin {
-    kotlinOptions.jvmTarget = "1.8"
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'ObjectPool jar'
+        attributes 'Implementation-Version': version
+    }
+    baseName jarBaseName
 }
