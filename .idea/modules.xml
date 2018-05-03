@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ConsoleApp/ConsoleApp.iml" filepath="$PROJECT_DIR$/ConsoleApp/ConsoleApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ObjectPool.iml" filepath="$PROJECT_DIR$/ObjectPool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/objectpool.iml" filepath="$PROJECT_DIR$/.idea/modules/objectpool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1159943077/ObjectPool.iml" filepath="$PROJECT_DIR$/.idea/modules/-1159943077/ObjectPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Object_Pool.iml" filepath="$PROJECT_DIR$/Object_Pool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-796528113/objectpool.iml" filepath="$PROJECT_DIR$/.idea/modules/-796528113/objectpool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/92030942/processor.iml" filepath="$PROJECT_DIR$/.idea/modules/92030942/processor.iml" />
     </modules>
   </component>
 </project>

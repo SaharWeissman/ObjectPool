@@ -1,0 +1,41 @@
+group 'com.saharw'
+version '1.0.00'
+
+apply plugin: 'kotlin'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/kotlin']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-math3:3.6.1'
+
+    testImplementation 'junit:junit:4.12'
+
+    // kotlin poet - lib for generating kotlin / java source files
+    compile 'com.squareup:kotlinpoet:0.7.0'
+    compile "com.google.auto.service:auto-service:1.0-rc2"
+    kapt "com.google.auto.service:auto-service:1.0-rc2"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+
+    compile project(':objectpool')
+
+}
+
+jar {
+}

@@ -1,2 +1,2 @@
 rootProject.name = 'ObjectPool'
-include ':app', ':objectpool'
+include ':ConsoleApp', ':objectpool', ':processor'

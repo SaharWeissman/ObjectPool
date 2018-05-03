@@ -8,7 +8,10 @@
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/consoleApp" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ConsoleApp" />
+            <option value="$PROJECT_DIR$/objectpool" />
+            <option value="$PROJECT_DIR$/processor" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
