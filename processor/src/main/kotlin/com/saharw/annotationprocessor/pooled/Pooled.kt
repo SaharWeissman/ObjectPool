@@ -1,3 +1,3 @@
 package com.saharw.annotationprocessor.pooled
 
-annotation class Pooled(val expirationTime: Long, val lockedInitialCap : Int = 10, val unlockedInitialCap : Int = 10)
+annotation class Pooled(val expirationTime: Long, val lockedInitialCap : Int = 25, val unlockedInitialCap : Int = 25)

@@ -1,4 +1,9 @@
 package com.saharw.objectpool
 
-fun main(args: Array<String>){
+import com.saharw.objectpool.impl.PooledFoo
+
+fun main(args: Array<String>) {
+    var pooledFoo = PooledFoo()
+    var foo = pooledFoo.checkOut()
+    println("foo: ${foo.`val`}")
 }

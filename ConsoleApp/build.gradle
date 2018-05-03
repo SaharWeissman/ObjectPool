@@ -19,5 +19,6 @@ sourceSets {
 dependencies {
     kapt project(":processor")
     compileOnly project(":processor")
+    compile project(':objectpool')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
 }

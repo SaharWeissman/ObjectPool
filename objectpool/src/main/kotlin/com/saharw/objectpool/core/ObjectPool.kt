@@ -3,11 +3,11 @@ package com.saharw.objectpool.core
 /**
  * Created by Sahar on 05/01/2018.
  */
-abstract class ObjectPool<T>(val expirationTime : Long, lockedTableInitialSize : Int,
+abstract class ObjectPool<T>(private val expirationTime : Long, lockedTableInitialSize : Int,
                              unlockedTableInitialSize : Int) {
 
-    var lockedTable = HashMap<T, Long>(lockedTableInitialSize)
-    var unlockedTable = HashMap<T, Long>(unlockedTableInitialSize)
+    private var lockedTable = HashMap<T, Long>(lockedTableInitialSize)
+    private var unlockedTable = HashMap<T, Long>(unlockedTableInitialSize)
 
     abstract fun create(): T
     abstract fun validate(instance : T) : Boolean
